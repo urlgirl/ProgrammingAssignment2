@@ -1,0 +1,8 @@
+#source('~/GitHub/ProgrammingAssignment2/cachematrix.R')
+testm <- matrix(4:7, nrow = 2, ncol = 2)
+print(testm)
+result <- solve(testm)
+cachedm <- makeCacheMatrix(testm)
+cacheSolve(cachedm)
+print("expect message 'getting cached data'")
+print(cacheSolve(cachedm))
